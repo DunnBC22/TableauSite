@@ -1,0 +1,27 @@
+$primary-color: darkblue;
+$secondary-color: blue;
+$ternary-color: lightblue;
+$quad-color: black;
+$quint-color: white;
+$nav-active-color: turquoise;
+
+@mixin listing {
+  list-style: none;
+  text-align: center;
+  width: 33.3%;
+  display: inline-block;
+
+  @media (max-width: 900px) {
+    width: 50%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+@mixin pictureWidth($minWidth: 100px, $percentWidth: 20%, $maxWidth: 250px) {
+  min-width: $minWidth;
+  width: $percentWidth;
+  max-width: $maxWidth;
+}

@@ -1,0 +1,48 @@
+@import "../application.scss";
+
+.side-by-side {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#headerLogo {
+  margin: 10px;
+  margin-top: 15px;
+  margin-right: 25%;
+  padding: 10px;
+  background: radial-gradient($secondary-color, $primary-color, $ternary-color);
+  height: 80px;
+  border: 3px $primary-color solid;
+  width: 80px;
+
+  @media (max-width: 650px) {
+    margin-right: 15%;
+  }
+}
+
+#headerLogo:hover {
+  background: radial-gradient(
+    $quint-color 15%,
+    $ternary-color 20%,
+    $secondary-color 70%,
+    $primary-color
+  );
+}
+
+#site-title {
+  text-align: center;
+  font-size: 180%;
+  border: 3px $quad-color solid;
+  border-radius: 40%;
+  padding: 0px 20px;
+  background-color: $quint-color;
+
+  @media (max-width: 600px) {
+    font-size: 150%;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 100%;
+    padding: 0px;
+  }
+}

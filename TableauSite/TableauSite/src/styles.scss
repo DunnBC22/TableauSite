@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/navigation.scss";
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    $ternary-color,
+    $secondary-color,
+    $primary-color
+  );
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-center {
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  color: $quad-color;
+}

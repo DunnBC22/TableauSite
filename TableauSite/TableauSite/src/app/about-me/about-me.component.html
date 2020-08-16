@@ -1,0 +1,39 @@
+<h1>About Me</h1>
+
+<div id="picture">
+  <a href="{{ LinkedInUrl }}">
+    <img src="{{ LinkedInPhoto }}" alt="My LinkedIn photo" />
+  </a>
+</div>
+
+<div class="needs-a-border">
+  <h3>My Education</h3>
+
+  <div id="education">
+    {{ MyEducation }}
+  </div>
+</div>
+
+<div class="needs-a-border">
+  <h3>My Skills</h3>
+  <div class="skill-list">
+    <ul>
+      <li *ngFor="let skill of MySkills">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="logos-side-by-side">
+  <div class="side-by-side" id="GithubLink">
+    <a href="{{ GithubUrl }}" alt="My GitHub Account"
+      ><img src="{{ GithubLogo }}" alt="My GitHub Account"
+    /></a>
+  </div>
+  <div class="side-by-side" id="LinkedInLink">
+    <a href="{{ LinkedInUrl }}" alt="My LinkedIn Account"
+      ><img src="{{ LinkedInLogo }}" alt="My LinkedIn Account"
+    /></a>
+  </div>
+</div>

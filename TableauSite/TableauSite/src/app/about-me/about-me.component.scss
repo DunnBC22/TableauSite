@@ -1,0 +1,68 @@
+@import "../application.scss";
+
+//the picture of ME
+#picture img {
+  @include pictureWidth(300px, 25%, 650px);
+  height: auto;
+  opacity: 1;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+#picture img:hover {
+  border: 1px $quad-color solid;
+}
+
+.needs-a-border {
+  border: 3px $quad-color solid;
+  padding: 1% 6% 2% 6%;
+  border-radius: 30%;
+  margin: 30px 10%;
+  background-image: linear-gradient(
+    45deg,
+    $primary-color,
+    $secondary-color,
+    $secondary-color,
+    $ternary-color
+  );
+}
+
+#education {
+  margin-left: 10px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.skill-list li {
+  @include listing();
+}
+
+//the LinkedIn and Github linked logos
+#logos-side-by-side {
+  .side-by-side {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    padding: 11%;
+    border: 3px $quad-color solid;
+    border-radius: 33%;
+    background-color: $quint-color;
+
+    @media (max-width: 425px) {
+    }
+  }
+
+  img:hover {
+    box-shadow: 5px 5px 5px $primary-color;
+    background-color: $ternary-color;
+  }
+}
